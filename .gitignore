@@ -1,0 +1,23 @@
+# 프로바이더 플러그인 (terraform init 으로 다시 받을 수 있음)
+.terraform/
+
+# state 파일: 리소스 정보와 민감한 값이 들어갈 수 있음
+*.tfstate
+*.tfstate.*
+
+# 변수값 파일: 비밀번호나 키가 들어갈 수 있음
+*.tfvars
+*.tfvars.json
+
+# 로컬 개인 설정과 에러 로그
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# apply 할 때 local_file 리소스가 만든 결과물
+양천휘
